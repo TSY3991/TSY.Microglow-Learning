@@ -26,7 +26,7 @@
     <header class="kit-hero">
       <p class="kit-eyebrow">MICROGLOW · AI TOOLKIT</p><h1>AI 常用工具合集</h1>
       <p class="kit-intro">讓 AI 幫你做事，先把工具準備好。</p>
-      <p>把 Git、Node.js、FFmpeg 等常用工具放在同一頁。依課堂或實作任務挑選，再請 Codex／Claude Code 協助檢查與使用。</p>
+      <p>把 Git、Node.js、FFmpeg、OCR 等常用工具放在同一頁。依課堂或實作任務挑選，再請 Codex／Claude Code 協助檢查與使用。</p>
       <div class="kit-hero-actions"><button type="button" class="kit-button" data-copy="classroom-prompt">複製給 AI 的引導文字</button><a class="kit-secondary" href="#tool-list">查看下載合集 ↓</a></div>
       <div class="kit-meta"><span>以 Windows 學習環境為主</span><span>不必全部安裝</span><span>來源查核：2026/10/16</span></div>
     </header>
@@ -49,9 +49,9 @@ https://tsy3991.github.io/TSY.Microglow-Learning/courses/ai-toolkit/
       <p class="kit-help">AI 能執行哪些指令，取決於你使用的環境與授權。這個頁面提供下載入口與引導，不會自行安裝軟體，也不會偵測你的電腦。</p>
     </section>
     <section class="kit-catalog" id="tool-list" aria-labelledby="tools-title">
-      <div class="kit-section-heading"><div><p class="kit-kicker">依任務挑選</p><h2 id="tools-title">常用工具，一頁找齊</h2></div><p class="kit-count" id="tool-count" role="status" aria-live="polite">14 個工具</p></div>
+      <div class="kit-section-heading"><div><p class="kit-kicker">依任務挑選</p><h2 id="tools-title">常用工具，一頁找齊</h2></div><p class="kit-count" id="tool-count" role="status" aria-live="polite">15 個工具</p></div>
       <p class="kit-help">下載會開啟原作者或供應商頁面；版本與作業系統以該頁為準。安裝後若仍找不到指令，可重開終端機，或請 AI 協助檢查 PATH。</p>
-      <div class="kit-controls" hidden data-controls><label class="kit-search" for="tool-search"><span>搜尋工具或用途</span><input id="tool-search" type="search" placeholder="例如 Git、影片、PDF、網頁" autocomplete="off"></label><fieldset class="kit-filters"><legend>工具分類</legend><div><button type="button" data-filter="all" aria-pressed="true">全部</button><button type="button" data-filter="basic" aria-pressed="false">環境基礎</button><button type="button" data-filter="code" aria-pressed="false">程式協作</button><button type="button" data-filter="media" aria-pressed="false">影音／文件</button><button type="button" data-filter="advanced" aria-pressed="false">進階開發</button></div></fieldset></div>
+      <div class="kit-controls" hidden data-controls><label class="kit-search" for="tool-search"><span>搜尋工具或用途</span><input id="tool-search" type="search" placeholder="例如 Git、影片、OCR、PDF、網頁" autocomplete="off"></label><fieldset class="kit-filters"><legend>工具分類</legend><div><button type="button" data-filter="all" aria-pressed="true">全部</button><button type="button" data-filter="basic" aria-pressed="false">環境基礎</button><button type="button" data-filter="code" aria-pressed="false">程式協作</button><button type="button" data-filter="media" aria-pressed="false">影音／文件</button><button type="button" data-filter="advanced" aria-pressed="false">進階開發</button></div></fieldset></div>
       <div class="kit-grid">
       <article class="kit-card" data-tool data-category="basic" data-search="git 幫程式保留修改紀錄，也能下載與管理 github 專案。 要改程式、取得專案或交付作業時。 git --version" aria-labelledby="git-title">
         <div class="kit-card-heading"><span class="kit-mark" aria-hidden="true">Git</span><div><p class="kit-category">環境基礎</p><h3 id="git-title">Git</h3></div></div>
@@ -132,6 +132,14 @@ pdftotext -v" aria-labelledby="poppler-title">
         <details class="kit-check"><summary>安裝後怎麼確認</summary><pre><code id="check-poppler">pdftoppm -v
 pdftotext -v</code></pre><button type="button" class="kit-small-button" data-copy="check-poppler">複製檢查方式<span class="sr-only">：Poppler</span></button></details>
         <div class="kit-card-actions"><a class="kit-button" href="https://github.com/oschwartz10612/poppler-windows/releases" target="_blank" rel="noopener noreferrer">Windows 社群版<span class="sr-only">：Poppler（另開分頁）</span></a><a class="kit-source-link" href="https://poppler.freedesktop.org/" target="_blank" rel="noopener noreferrer">來源與說明<span class="sr-only">：Poppler（另開分頁）</span></a></div>
+      </article>
+      <article class="kit-card" data-tool data-category="media" data-search="tesseract ocr 光學文字辨識 圖片轉文字 掃描文件 截圖 繁體中文 chi_tra 英文 eng tesseract --version --list-langs" aria-labelledby="tesseract-title">
+        <div class="kit-card-heading"><span class="kit-mark" aria-hidden="true">OCR</span><div><p class="kit-category">影音／文件</p><h3 id="tesseract-title">Tesseract OCR</h3></div></div>
+        <p class="kit-use">辨識圖片、截圖與掃描頁面中的印刷文字，轉成可整理的文字資料。</p><p class="kit-when"><strong>什麼時候用</strong>AI 需要讀取圖片文字，或處理無法選取文字的掃描文件時。</p>
+        <p class="kit-note">Windows 入口為官方文件列出的 UB Mannheim 建置版。繁體中文需準備 chi_tra 語言資料，英文使用 eng；請 AI 確認語言可用。掃描 PDF 可先用 Poppler 轉圖，再進行 OCR；辨識結果仍需校對。</p><p class="kit-source">官方文件列出的第三方建置來源</p>
+        <details class="kit-check"><summary>安裝後怎麼確認</summary><pre><code id="check-tesseract">tesseract --version
+tesseract --list-langs</code></pre><p class="kit-help">版本能顯示後，再確認語言清單包含任務需要的 chi_tra／eng；只有版本正常，不代表已可辨識繁體中文。</p><button type="button" class="kit-small-button" data-copy="check-tesseract">複製檢查方式<span class="sr-only">：Tesseract OCR</span></button></details>
+        <div class="kit-card-actions"><a class="kit-button" href="https://github.com/UB-Mannheim/tesseract/wiki" target="_blank" rel="noopener noreferrer">Windows 建置版<span class="sr-only">：Tesseract OCR（另開分頁）</span></a><a class="kit-source-link" href="https://tesseract-ocr.github.io/tessdoc/Installation.html" target="_blank" rel="noopener noreferrer">官方安裝說明<span class="sr-only">：Tesseract OCR（另開分頁）</span></a><a class="kit-source-link" href="https://tesseract-ocr.github.io/tessdoc/Data-Files.html" target="_blank" rel="noopener noreferrer">官方語言資料<span class="sr-only">：Tesseract OCR（另開分頁）</span></a></div>
       </article>
       <article class="kit-card" data-tool data-category="advanced" data-search="google chrome 預覽網頁，配合瀏覽器自動化工具檢查畫面與操作。 課程指定 chrome 或需要瀏覽器測試時。 chrome://version" aria-labelledby="chrome-title">
         <div class="kit-card-heading"><span class="kit-mark" aria-hidden="true">Web</span><div><p class="kit-category">進階開發</p><h3 id="chrome-title">Google Chrome</h3></div></div>
