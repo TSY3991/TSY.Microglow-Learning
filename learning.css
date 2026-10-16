@@ -1,0 +1,10 @@
+.learning-brand { display: flex; align-items: center; gap: 22px; margin-bottom: 22px; }
+.learning-brand img { width: 88px; height: 88px; object-fit: contain; }
+.learning-brand .kit-eyebrow { margin: 0; line-height: 1.8; }
+.learning-section { margin-top: 36px; }
+.learning-card { max-width: 720px; gap: 20px; padding: clamp(24px, 4vw, 36px); }
+.learning-card p { line-height: 1.85; color: var(--kit-muted); margin: 0; }
+.learning-card .kit-tag { align-self: flex-start; }
+.learning-card h3 { font-size: 1.5rem; }
+.learning-card .kit-button { margin-top: 4px; }
+@media (max-width: 640px) { .learning-brand { gap: 14px; } .learning-brand img { width: 68px; height: 68px; } }

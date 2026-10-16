@@ -1,0 +1,8 @@
+微光課程學習
+
+課程大廳：https://tsy3991.github.io/TSY.Microglow-Learning/
+AI 常用工具合集：https://tsy3991.github.io/TSY.Microglow-Learning/courses/ai-toolkit/
+
+依課程挑選工具，不必全部安裝。
+可複製工具合集中的引導文字，貼給有本機執行權限的 Codex／Claude Code，請 AI 檢查環境並協助使用需要的工具。
+下載、版本與授權以各工具來源網站為準。
