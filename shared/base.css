@@ -122,3 +122,14 @@ code { font-family: Consolas, "Cascadia Code", monospace; }
 .kit-topbar { flex-wrap: wrap; }
 .kit-footer a { padding: 10px 14px; border: 1px solid var(--kit-line); border-radius: 14px; background: #fffdf5; text-decoration: none; box-shadow: 0 3px 0 #dce5d6; }
 @media (prefers-reduced-motion: no-preference) { @view-transition { navigation: auto; } }
+
+@media (prefers-color-scheme:dark) {
+ :root { color-scheme:dark; --kit-bg:#102527; --kit-panel:#193336; --kit-panel-soft:#203d40; --kit-ink:#f6f3e9; --kit-muted:#b5c9c4; --kit-line:#526b6b; --kit-teal:#8ee0cf; --kit-gold:#ffcf70; --kit-shadow:0 16px 36px #0007; }
+ html,body { color-scheme:dark; background:#102527; color:#f6f3e9; }
+ :is(.kit-hero,.kit-panel,.kit-card,.kit-controls,.kit-filters button,.kit-search input,textarea,pre) { background-color:#193336; color:#f6f3e9; border-color:#526b6b; }
+ .kit-hero { background:linear-gradient(120deg,#193336,#203d40); } :is(.kit-hero>p:not(.kit-eyebrow),.kit-when,.kit-faq p,.kit-filters button) { color:#d4e2de; }
+ :is(.kit-eyebrow,.kit-kicker) { color:#8ee0cf; } .kit-filters button[aria-pressed="true"] { background:#204d48; color:#f6f3e9; border-color:#8ee0cf; }
+ .kit-secondary,.kit-small-button { background:#203d40; color:#d4e2de; } .kit-button { background:linear-gradient(#8ee0cf,#63c4b1); color:#102527; border-color:#8ee0cf; } .kit-source { background:#493b20; color:#ffcf70; } .kit-copy-status { background:#203d40; color:#f6f3e9; }
+}
+.skip-link { top:calc(12px + env(safe-area-inset-top,0px)); left:calc(12px + env(safe-area-inset-left,0px)); }
+.kit-copy-status { bottom:calc(20px + env(safe-area-inset-bottom,0px)); left:calc(50% + env(safe-area-inset-left,0px)); max-width:calc(100% - 32px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)); }
