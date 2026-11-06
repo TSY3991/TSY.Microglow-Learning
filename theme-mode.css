@@ -5,3 +5,11 @@
 .tsy-theme-toggle:focus-visible { outline: 3px solid #0a887e; outline-offset: 3px; }
 :root[data-theme="dark"] .tsy-theme-toggle { color: var(--ink, #f6f3e9); background: var(--panel, #193336); border-color: var(--line, #526b6b); box-shadow: 0 2px 0 rgba(0,0,0,.25); }
 :root[data-theme="dark"] .tsy-theme-toggle:focus-visible { outline-color: #8ee0cf; }
+
+/* Full light/dark text contrast review. */
+
+:root:not([data-theme="dark"]){--muted:#56645f;--teal:#08766e}
+:root[data-theme="dark"] :is(input,textarea)::placeholder{color:#b5c9c4;opacity:1}
+
+
+.brand-logo-dark{display:none}:root[data-theme="dark"] .brand-logo-light{display:none}:root[data-theme="dark"] .brand-logo-dark{display:block}
