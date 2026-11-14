@@ -120,7 +120,9 @@ code { font-family: Consolas, "Cascadia Code", monospace; }
   .kit-card { break-inside: avoid; box-shadow: none; }
 }
 
-.kit-topbar { flex-wrap: wrap; }
+.kit-topbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 22px; }
+.kit-topbar a:first-child { margin-right: auto; }
+.kit-topbar .tsy-theme-toggle { margin-inline-start: 0 !important; border-radius: 14px !important; }
 .kit-footer a { padding: 10px 14px; border: 1px solid var(--kit-line); border-radius: 14px; background: #fffdf5; text-decoration: none; box-shadow: 0 3px 0 #dce5d6; }
 @media (prefers-reduced-motion: no-preference) { @view-transition { navigation: auto; } }
 
