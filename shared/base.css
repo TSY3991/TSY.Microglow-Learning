@@ -10,9 +10,11 @@
   background: #f5f6ed;
 }
 * { box-sizing: border-box; }
+html, body { overflow-x: clip; max-width: 100%; }
 body { margin: 0; background: radial-gradient(ellipse at 6% 0, #f5ecd9, transparent 40rem), radial-gradient(ellipse at 95% 18%, #e7f1e8, transparent 42rem), #f5f6ed; }
 button, input, textarea { font: inherit; }
-button, a { -webkit-tap-highlight-color: transparent; }
+button, a, input, select, textarea, summary, label { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.kit-button:active, .kit-secondary:active, .kit-small-button:active, .kit-filters button:active, .kit-topbar a:active { transform: scale(0.97); }
 a { color: #08665d; text-underline-offset: 4px; }
 button { cursor: pointer; }
 h1, h2, h3, p { margin-top: 0; }
