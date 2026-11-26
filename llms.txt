@@ -1,0 +1,12 @@
+# 微光課程學習（TSY.Microglow Learning）
+
+> TSY 微光創作室的課程教材、AI 實作與學習環境準備入口。
+
+## 學習資源
+
+- [微光課程學習大廳](https://tsy3991.github.io/TSY.Microglow-Learning/): 課程與學習工具總覽。
+- [AI 常用工具合集](https://tsy3991.github.io/TSY.Microglow-Learning/courses/ai-toolkit/): 整理 Git、Node.js、Python、FFmpeg、OCR 等 15 個常用開發與 AI 實作工具官方下載來源、安裝驗證指令，以及可貼給 Codex／Claude Code 的課堂引導文字。
+
+## 相關站點
+
+- [TSY 微光創作室主入口](https://tsy3991.github.io/TSY.Microglow-Website/)
